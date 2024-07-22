@@ -35,5 +35,5 @@ function calc(){
         result += total;
     }
 
-    output.innerHTML += `</br><h4>Preço final: ${formatter.format(result)}</h4>`;
+    output.innerHTML += `</br><h3>Preço final: ${formatter.format(result)}</h3>`;
 }
