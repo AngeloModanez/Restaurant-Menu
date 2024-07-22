@@ -14,10 +14,13 @@ const formatter = new Intl.NumberFormat('pt-BR', {
 
 function calc(){
     var quantities = document.getElementsByName("quantity");
+    var personName = document.getElementById("name").value;
     var output = document.getElementById("output");
     var result = 0;
 
-    output.innerHTML = "";
+    output.innerHTML = `</br>Caro <strong>${personName}</strong></br></br></br  >`;
+    output.innerHTML += 'Seguem os dados do seu pedido</br></br>';
+    output.innerHTML += 'O seu pedido é: </br></br>';
     
     for(var input of quantities){
         if (input.value == 0) {
@@ -32,6 +35,5 @@ function calc(){
         result += total;
     }
 
-    output.innerHTML += `</ul>`;
     output.innerHTML += `</br><h4>Preço final: ${formatter.format(result)}</h4>`;
 }
