@@ -44,6 +44,12 @@ body {
     height: 300px;
 }
 
+.price {
+    font-size: 20px;
+    color: green;
+    font-weight: 600;
+}
+
 input {
     margin: auto;
     margin-top: 1rem;
